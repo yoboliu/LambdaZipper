@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir temp
-python3 -m pip install $1 -t temp
-rm -f /package/$1.zip
+python3 -m pip install boto3 opencv-python -t temp
+rm -f /package/opencv-python.zip
 
 cd temp
-zip -r /package/$1.zip *
+zip -r /package/opencv-python.zip *
